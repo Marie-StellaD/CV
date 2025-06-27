@@ -1,4 +1,4 @@
-/*/* Reset and Base Styles 
+/* Reset and Base Styles 
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ body {
     padding: 0 2rem;
 }
 
-/* Typography 
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
     font-weight: 600;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
 }
 
-/* Hero Section 
+/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-3px);
 }
 
-/* Hero Image 
+/* Hero Image */
 .hero-image {
     display: flex;
     justify-content: center;
@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
     50% { transform: translateY(-15px); }
 }
 
-/* Section Styles 
+/* Section Styles */
 section {
     padding: 6rem 0;
     position: relative;
@@ -472,7 +472,7 @@ section {
     z-index: 2;
 }
 
-/* About Section 
+/* About Section*/ 
 .about {
     background: var(--background-light);
 }
@@ -619,7 +619,7 @@ section {
     font-weight: 600;
 }
 
-/* Experience Section 
+/* Experience Section */
 .timeline-container {
     max-width: 900px;
     margin: 0 auto;
@@ -764,7 +764,7 @@ section {
     font-weight: 600;
 }
 
-/* Education Section 
+/* Education Section */
 .education {
     background: var(--background-light);
 }
@@ -859,7 +859,7 @@ section {
     font-weight: 500;
 }
 
-/* Skills Section 
+/* Skills Section */
 .skills-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -1072,7 +1072,7 @@ section {
     color: var(--primary-color);
 }
 
-/* Contact Section 
+/* Contact Section */
 .contact {
     background: var(--background-light);
 }
@@ -1203,7 +1203,7 @@ section {
     margin-top: 1rem;
 }
 
-/* Footer 
+/* Footer */
 .footer {
     background: var(--background-dark);
     color: white;
@@ -1279,7 +1279,7 @@ section {
     color: var(--text-light);
 }
 
-/* Animations 
+/* Animations */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -1313,7 +1313,7 @@ section {
     transform: translateX(0);
 }
 
-/* Responsive Design 
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1455,7 +1455,7 @@ section {
     }
 }
 
-/* Print Styles 
+/* Print Styles */
 @media print {
     .navbar,
     .nav-toggle,
@@ -1512,5 +1512,3 @@ section {
         font-size: 24pt;
     }
 }
-
-*/

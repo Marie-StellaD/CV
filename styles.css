@@ -30,19 +30,30 @@
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif;   */
 
-   --primary-color: #000000;
---secondary-color: #1a1a1a;
---accent-color: #ffffff;
---gold-accent: #e0e0e0;
---text-primary: #000000;
---text-secondary: #4f4f4f;
---text-light: #bfbfbf;
---background: #ffffff;
---background-light: #f5f5f5;
---background-dark: #000000;
---gradient-primary: linear-gradient(135deg, #000000, #4f4f4f);
---gradient-accent: linear-gradient(135deg, #4f4f4f, #000000);
---gradient-gold: linear-gradient(135deg, #e0e0e0, #cfcfcf); }
+  --primary-color: #000000;
+    --secondary-color: #1a1a1a;
+    --accent-color: #ffffff;
+    --gold-accent: #999999;
+    --text-primary: #000000;
+    --text-secondary: #555555;
+    --text-light: #dcdcdc;
+    --background: #ffffff;
+    --background-light: #f9f9f9;
+    --background-dark: #000000;
+    --border-color: #e0e0e0;
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #000000, #333333);
+    --gradient-accent: linear-gradient(135deg, #ffffff, #dddddd);
+    --gradient-gold: linear-gradient(135deg, #cccccc, #eeeeee);
+    --border-radius: 12px;
+    --border-radius-large: 20px;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Inter', sans-serif;
+
+
   
 }
 /* Import Google Fonts */

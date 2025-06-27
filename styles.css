@@ -30,7 +30,7 @@
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif;   */
 
-    /*Bleu & Doré*/
+    /*Bleu & Doré*
       --primary-color: #0b2545;
     --secondary-color: #13315c;
     --accent-color: #f4d35e;
@@ -52,7 +52,7 @@
     --border-radius-large: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-secondary: 'Inter', sans-serif;*/
 
 
   
@@ -103,6 +103,32 @@
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif; */
+
+    /* Palette Marron & Doré */
+    --primary-color: #4e342e; /* Marron profond */
+    --secondary-color: #6d4c41; /* Marron clair */
+    --accent-color: #c5a880; /* Doré élégant */
+    --gold-accent: #d4af37; /* Or riche */
+    --text-primary: #3e2723;
+    --text-secondary: #5d4037;
+    --text-light: #d7ccc8;
+    --background: #ffffff;
+    --background-light: #f9f6f2;
+    --background-dark: #3e2723;
+    --border-color: #e0e0e0;
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #4e342e, #6d4c41);
+    --gradient-accent: linear-gradient(135deg, #c5a880, #d4af37);
+    --gradient-gold: linear-gradient(135deg, #d4af37, #f1e2c6);
+    --border-radius: 12px;
+    --border-radius-large: 20px;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Inter', sans-serif;
+
+
 
   
 }

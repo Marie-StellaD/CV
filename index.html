@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marie-Stella DATO - Consultante Data Analyst</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h3>Marie-Stella DATO</h3>
+                <span class="logo-text">Marie-Stella</span>
+                <span class="logo-accent">DATO</span>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Accueil</a>
@@ -24,44 +25,71 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-greeting">Bonjour, je suis</div>
                     <h1 class="hero-title">
-                        <span class="hero-greeting">Bonjour, je suis</span>
-                        <span class="hero-name">Marie-Stella DATO</span>
+                        <span class="title-line">Marie-Stella</span>
+                        <span class="title-line accent">DATO</span>
                     </h1>
-                    <p class="hero-subtitle">Consultante Data Analyst</p>
+                    <div class="hero-subtitle">
+                        <span class="subtitle-text">Consultante</span>
+                        <span class="subtitle-highlight">Data Analyst</span>
+                    </div>
                     <p class="hero-description">
                         Spécialisée en intégration, analyse et visualisation de données, 
                         je transforme les données en insights stratégiques pour optimiser 
                         la prise de décision en entreprise.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Me contacter</a>
-                        <a href="#about" class="btn btn-secondary">En savoir plus</a>
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Me contacter</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>Découvrir mon profil</span>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-circle"></i>
+                    <div class="image-container">
+                        <div class="image-frame">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-database"></i>
+                                <span>Big Data</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-brain"></i>
+                                <span>BI</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-background">
-            <div class="bg-shape shape-1"></div>
-            <div class="bg-shape shape-2"></div>
-            <div class="bg-shape shape-3"></div>
         </div>
     </section>
 
@@ -69,12 +97,16 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">01</div>
                 <h2 class="section-title">À propos de moi</h2>
                 <p class="section-subtitle">Découvrez mon parcours et mes aspirations professionnelles</p>
             </div>
             <div class="about-content">
-                <div class="about-text">
-                    <div class="about-card">
+                <div class="about-main">
+                    <div class="about-card profile-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
                         <h3>Mon Profil</h3>
                         <p>
                             Consultante passionnée par la data science et l'analyse de données, 
@@ -82,7 +114,10 @@
                             exploiter pleinement leur potentiel data.
                         </p>
                     </div>
-                    <div class="about-card">
+                    <div class="about-card aspirations-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
                         <h3>Mes Aspirations</h3>
                         <p>
                             J'aspire à développer mes compétences professionnelles dans la data science, 
@@ -90,48 +125,62 @@
                             m'épanouir dans un environnement professionnel sain.
                         </p>
                     </div>
-                    <div class="about-card">
+                    <div class="about-card interests-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
                         <h3>Centres d'Intérêts</h3>
-                        <div class="interests">
+                        <div class="interests-grid">
                             <span class="interest-tag">Musique</span>
                             <span class="interest-tag">Séries</span>
                             <span class="interest-tag">K-dramas</span>
                             <span class="interest-tag">Photographie</span>
-                            <span class="interest-tag">Films/Séries</span>
+                            <span class="interest-tag">Films</span>
                             <span class="interest-tag">Voyage</span>
                             <span class="interest-tag">Cuisine</span>
                             <span class="interest-tag">Lecture</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-info">
-                    <div class="info-card">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>Paris, France</p>
+                <div class="about-sidebar">
+                    <div class="contact-info-card">
+                        <h3>Informations de Contact</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Localisation</span>
+                                    <span class="contact-value">Paris, France</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>mariestella.msd@gmail.com</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">mariestella.msd@gmail.com</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <p>07 66 50 22 02</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Téléphone</span>
+                                    <span class="contact-value">07 66 50 22 02</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>Marie-Stella DATO</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value">Marie-Stella DATO</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,69 +193,87 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">02</div>
                 <h2 class="section-title">Expérience Professionnelle</h2>
                 <p class="section-subtitle">Mon parcours professionnel en Business Intelligence</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2023 - Aujourd'hui</div>
-                        <h3>Consultante Data Analyst</h3>
-                        <h4>CDDI - ACSSI</h4>
-                        <ul>
-                            <li>Développement de Dashboards Qlik et automatisations</li>
-                            <li>Migration des applications de QlikView vers Qlik Sense Enterprise</li>
-                            <li>Migration Qlik Sense Enterprise vers Qlik Sense Cloud et vers Power BI</li>
-                            <li>Montée de versions de Qlik Sense</li>
-                            <li>Installation de Qlik Data Gateway</li>
-                            <li>Gestion des applications sur la console de management de Qlik</li>
-                        </ul>
-                        <div class="skills-developed">
-                            <span class="skill-tag">Gestion de projets</span>
-                            <span class="skill-tag">Relations clients</span>
-                            <span class="skill-tag">Interprétation du besoin client</span>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge current">Actuel</div>
+                            <div class="timeline-period">2023 - Aujourd'hui</div>
+                            <h3 class="timeline-title">Consultante Data Analyst</h3>
+                            <h4 class="timeline-company">CDDI - ACSSI</h4>
+                            <div class="timeline-description">
+                                <ul class="timeline-tasks">
+                                    <li>Développement de Dashboards Qlik et automatisations</li>
+                                    <li>Migration des applications de QlikView vers Qlik Sense Enterprise</li>
+                                    <li>Migration Qlik Sense Enterprise vers Qlik Sense Cloud et vers Power BI</li>
+                                    <li>Montée de versions de Qlik Sense</li>
+                                    <li>Installation de Qlik Data Gateway</li>
+                                    <li>Gestion des applications sur la console de management de Qlik</li>
+                                </ul>
+                                <div class="skills-developed">
+                                    <span class="skill-badge">Gestion de projets</span>
+                                    <span class="skill-badge">Relations clients</span>
+                                    <span class="skill-badge">Interprétation du besoin client</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2022 - 2023</div>
-                        <h3>Alternance - Consultante Data Analyst Junior</h3>
-                        <h4>ACSSI</h4>
-                        <ul>
-                            <li>Formation à Qlik Sense</li>
-                            <li>Découverte de Talend</li>
-                            <li>Développement d'application Qlik Sense en projets internes</li>
-                            <li>Développement d'automatisations Qlik</li>
-                            <li>Design d'applications QlikView sur Qlik Sense pour des clients</li>
-                        </ul>
-                        <div class="skills-developed">
-                            <span class="skill-tag">Développement BI</span>
-                            <span class="skill-tag">Qlik Sense</span>
-                            <span class="skill-tag">Restitution</span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-period">2022 - 2023</div>
+                            <h3 class="timeline-title">Alternance - Consultante Data Analyst Junior</h3>
+                            <h4 class="timeline-company">ACSSI</h4>
+                            <div class="timeline-description">
+                                <ul class="timeline-tasks">
+                                    <li>Formation à Qlik Sense</li>
+                                    <li>Découverte de Talend</li>
+                                    <li>Développement d'application Qlik Sense en projets internes</li>
+                                    <li>Développement d'automatisations Qlik</li>
+                                    <li>Design d'applications QlikView sur Qlik Sense pour des clients</li>
+                                </ul>
+                                <div class="skills-developed">
+                                    <span class="skill-badge">Développement BI</span>
+                                    <span class="skill-badge">Qlik Sense</span>
+                                    <span class="skill-badge">Restitution</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Mai 2022 - Août 2022</div>
-                        <h3>Stage - Analyse de Données</h3>
-                        <h4>Université de Mons - ISIA LAB</h4>
-                        <p>Analyse d'expressions nonverbales dans des interactions hommes-agents.</p>
-                        <ul>
-                            <li>Annotation de vidéos représentant les données brutes</li>
-                            <li>Analyse descriptive de la base de données extraite des vidéos</li>
-                            <li>Analyse statistique de cette base de données</li>
-                            <li>Génération de données d'entrée à un modèle d'apprentissage permettant d'effectuer de la prise de décision</li>
-                        </ul>
-                        <div class="skills-developed">
-                            <span class="skill-tag">Gestion de projet</span>
-                            <span class="skill-tag">Autonomie</span>
-                            <span class="skill-tag">Programmation Python</span>
-                            <span class="skill-tag">Git CMD</span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-period">Mai 2022 - Août 2022</div>
+                            <h3 class="timeline-title">Stage - Analyse de Données</h3>
+                            <h4 class="timeline-company">Université de Mons - ISIA LAB</h4>
+                            <p class="timeline-project">Analyse d'expressions nonverbales dans des interactions hommes-agents.</p>
+                            <div class="timeline-description">
+                                <ul class="timeline-tasks">
+                                    <li>Annotation de vidéos représentant les données brutes</li>
+                                    <li>Analyse descriptive de la base de données extraite des vidéos</li>
+                                    <li>Analyse statistique de cette base de données</li>
+                                    <li>Génération de données d'entrée à un modèle d'apprentissage permettant d'effectuer de la prise de décision</li>
+                                </ul>
+                                <div class="skills-developed">
+                                    <span class="skill-badge">Gestion de projet</span>
+                                    <span class="skill-badge">Autonomie</span>
+                                    <span class="skill-badge">Programmation Python</span>
+                                    <span class="skill-badge">Git CMD</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,37 +285,44 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">03</div>
                 <h2 class="section-title">Formation</h2>
                 <p class="section-subtitle">Mon parcours académique en ingénierie et data science</p>
             </div>
             <div class="education-grid">
-                <div class="education-card">
+                <div class="education-card master-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
                     <div class="education-period">2020 - 2023</div>
-                    <h3>Master d'Ingénieure Big Data</h3>
-                    <h4>Grande École d'Ingénieurs JUNIA ISEN - Lille</h4>
+                    <h3 class="education-title">Master d'Ingénieure Big Data</h3>
+                    <h4 class="education-school">Grande École d'Ingénieurs JUNIA ISEN - Lille</h4>
                     <div class="education-details">
                         <h5>Compétences acquises :</h5>
-                        <ul>
-                            <li>Analyse statistiques</li>
-                            <li>Machine Learning & IA</li>
-                            <li>Business Intelligence</li>
-                            <li>Cloud Computing</li>
-                            <li>NoSQL Database</li>
-                            <li>Gestion de projet & de risques</li>
-                        </ul>
+                        <div class="competences-grid">
+                            <span class="competence-item">Analyse statistiques</span>
+                            <span class="competence-item">Machine Learning & IA</span>
+                            <span class="competence-item">Business Intelligence</span>
+                            <span class="competence-item">Cloud Computing</span>
+                            <span class="competence-item">NoSQL Database</span>
+                            <span class="competence-item">Gestion de projet & de risques</span>
+                        </div>
                     </div>
                 </div>
-                <div class="education-card">
+                <div class="education-card prep-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
                     <div class="education-period">2018 - 2020</div>
-                    <h3>Classes préparatoires intégrées</h3>
-                    <h4>JUNIA ISEN - Lille</h4>
+                    <h3 class="education-title">Classes préparatoires intégrées</h3>
+                    <h4 class="education-school">JUNIA ISEN - Lille</h4>
                     <div class="education-details">
                         <h5>Matières principales :</h5>
-                        <ul>
-                            <li>Mathématiques</li>
-                            <li>Physique</li>
-                            <li>Informatique</li>
-                        </ul>
+                        <div class="competences-grid">
+                            <span class="competence-item">Mathématiques</span>
+                            <span class="competence-item">Physique</span>
+                            <span class="competence-item">Informatique</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,123 +333,182 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">04</div>
                 <h2 class="section-title">Compétences</h2>
                 <p class="section-subtitle">Mes expertises techniques et soft skills</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i>Data Analyse</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category technical-skills">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Langages de Programmation</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">R</span>
+                                    <span class="skill-level">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Qlik Sense</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">R</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="60%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>  
-                        <div class="skill-item">
-                            <span class="skill-name">Qlik Sense langage</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div> 
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Data Visualisation</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Qlik Sense</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Streamlit</span>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Visualisation</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Qlik Sense</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Streamlit</span>
+                        </div>
                     </div>
-                </div>
-              
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Data Science</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Keras</span>
-                        <span class="skill-tag">Scikit-Learn</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Outils d'IA</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ChatGPT</span>
-                        <span class="skill-tag">Playground</span>
-                    </div>
-                </div>
-                
 
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
-                    <div class="soft-skills">
-                        <div class="soft-skill">
-                            <i class="fas fa-sync-alt"></i>
-                            <span>Adaptation</span>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Data Science</h3>
                         </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-ear-listen"></i>
-                            <span>Écoute Active</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-comments"></i>
-                            <span>Communication</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-user-friends"></i>
-                            <span>Travail en Équipe</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-user-clock"></i>
-                            <span>Autonomie</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-tasks"></i>
-                            <span>Organisation</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Curiosité</span>
-                        </div>
-                        <div class="soft-skill">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Rigueur</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">Scikit-Learn</span>
                         </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-globe"></i> Langues</h3>
-                    <div class="language-skills">
-                        <div class="language-item">
-                            <span class="language-name">Français</span>
-                            <span class="language-level">Natif</span>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Outils d'IA</h3>
                         </div>
-                        <div class="language-item">
-                            <span class="language-name">Anglais</span>
-                            <span class="language-level">B2</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">Playground</span>
                         </div>
-                        <div class="language-item">
-                            <span class="language-name">Espagnol/Coréen</span>
-                            <span class="language-level">Basiques</span>
+                    </div>
+
+                    <div class="skill-category soft-skills-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <span>Adaptation</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-ear-listen"></i>
+                                </div>
+                                <span>Écoute Active</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <span>Travail en Équipe</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-user-clock"></i>
+                                </div>
+                                <span>Autonomie</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <span>Organisation</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <span>Curiosité</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Rigueur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category languages-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Langues</h3>
+                        </div>
+                        <div class="languages-list">
+                            <div class="language-item">
+                                <span class="language-name">Français</span>
+                                <span class="language-level native">Natif</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Anglais</span>
+                                <span class="language-level intermediate">B2</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Espagnol/Coréen</span>
+                                <span class="language-level basic">Basiques</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -387,52 +520,67 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">05</div>
                 <h2 class="section-title">Contactez-moi</h2>
                 <p class="section-subtitle">N'hésitez pas à me contacter pour discuter d'opportunités professionnelles</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-card">
-                        <h3>Informations de Contact</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>mariestella.msd@gmail.com</p>
+                        <h3>Restons en contact</h3>
+                        <p>Je suis toujours ouverte aux nouvelles opportunités et collaborations dans le domaine de la data science et de l'analyse de données.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>mariestella.msd@gmail.com</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <p>07 66 50 22 02</p>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Téléphone</h4>
+                                    <p>07 66 50 22 02</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>Paris, France</p>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Localisation</h4>
+                                    <p>Paris, France</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>Marie-Stella DATO</p>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>LinkedIn</h4>
+                                    <p>Marie-Stella DATO</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Sujet</label>
@@ -440,9 +588,12 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -453,13 +604,37 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Marie-Stella DATO. Tous droits réservés.</p>
-                <div class="footer-links">
-                    <a href="#home">Accueil</a>
-                    <a href="#about">À propos</a>
-                    <a href="#experience">Expérience</a>
-                    <a href="#contact">Contact</a>
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">Marie-Stella</span>
+                        <span class="logo-accent">DATO</span>
+                    </div>
+                    <p class="footer-description">
+                        Consultante Data Analyst passionnée par la transformation des données en insights stratégiques.
+                    </p>
                 </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#education">Formation</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> mariestella.msd@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 07 66 50 22 02</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Marie-Stella DATO. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

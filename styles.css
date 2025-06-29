@@ -6,8 +6,8 @@
 }
 
 :root {
-   /*Noir & blanc 
-    /* --primary-color: #000000;
+   /*Noir & blanc */
+     --primary-color: #000000;
     --secondary-color: #1a1a1a;
     --accent-color: #ffffff;
     --gold-accent: #999999;
@@ -28,7 +28,7 @@
     --border-radius-large: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Inter', sans-serif; */
+    --font-secondary: 'Inter', sans-serif; 
 
     /*Vert&Crème 
     --primary-color: #1b4332;
@@ -54,11 +54,11 @@
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif; */
   
-    /* Palette Marron & Doré */
-    --primary-color: #4e342e; /* Marron profond */
-    --secondary-color: #6d4c41; /* Marron clair */
-    --accent-color: #c5a880; /* Doré élégant */
-    --gold-accent: #d4af37; /* Or riche */
+    /* Palette Marron & Doré 
+    --primary-color: #4e342e; /* Marron profond 
+    --secondary-color: #6d4c41; /* Marron clair 
+    --accent-color: #c5a880; /* Doré élégant 
+    --gold-accent: #d4af37; /* Or riche 
     --text-primary: #3e2723;
     --text-secondary: #5d4037;
     --text-light: #d7ccc8;
@@ -76,7 +76,7 @@
     --border-radius-large: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-secondary: 'Inter', sans-serif;*/
 }
 
 /* Import Google Fonts */

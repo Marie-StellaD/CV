@@ -87,8 +87,9 @@
     --text-secondary: #5C5C5C;
     --text-light: #DADADA;
     --background: #FFFFFF;
-    --background-light: #FAFAFA;
-    --background-dark: #1C1C1C;
+    --background-light: #F5F5F5;
+    --background-dark: #2A2A2A;
+    --background-darker: #1F1F1F;
     --border-color: #E0E0E0;
     --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
     --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
@@ -231,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 20%, #e0e0e0 40%, #c0c0c0 60%, #808080 80%, #2a2a2a 100%);
 }
 
 .hero-background {
@@ -568,7 +569,16 @@ section {
 
 /* About Section - New Layout with Full-Width Interests */ 
 .about {
-    background: var(--background-light);
+    background: var(--background-dark);
+    color: white;
+}
+
+.about .section-title {
+    color: white;
+}
+
+.about .section-subtitle {
+    color: var(--text-light);
 }
 
 .about-content {
@@ -590,10 +600,12 @@ section {
 }
 
 .about-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -607,19 +619,20 @@ section {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
 }
 
 .about-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .card-icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -633,12 +646,12 @@ section {
 
 .about-card h3 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 1rem;
 }
 
 .about-card p {
-    color: var(--text-secondary);
+    color: var(--text-light);
     line-height: 1.7;
 }
 
@@ -676,7 +689,9 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem 0.75rem; /* Reduced from 1.5rem 1rem */
-    background: linear-gradient(135deg, var(--background-light) 0%, #f0f0f0 100%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius); /* Reduced from border-radius-large */
     transition: var(--transition);
     cursor: pointer;
@@ -704,19 +719,20 @@ section {
 }
 
 .interest-item:hover::before {
-    opacity: 0.15;
+    opacity: 0.2;
 }
 
 .interest-item:hover {
     transform: translateY(-6px) scale(1.03); /* Reduced scale from 1.05 */
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     animation-play-state: paused;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .interest-icon {
     width: 40px; /* Reduced from 50px */
     height: 40px; /* Reduced from 50px */
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -734,7 +750,7 @@ section {
 }
 
 .interest-item:hover .interest-icon {
-    background: var(--gradient-accent);
+    background: white;
     transform: scale(1.15) rotate(12deg); /* Reduced scale and rotation */
 }
 
@@ -745,14 +761,14 @@ section {
 .interest-title {
     font-size: 0.9rem; /* Reduced from 1rem */
     font-weight: 600;
-    color: var(--primary-color);
+    color: white;
     position: relative;
     z-index: 2;
     transition: var(--transition);
 }
 
 .interest-item:hover .interest-title {
-    color: var(--primary-color);
+    color: white;
     font-weight: 700;
     transform: translateY(-1px); /* Reduced from -2px */
 }
@@ -821,6 +837,19 @@ section {
 }
 
 /* Experience Section */
+.experience {
+    background: var(--background-darker);
+    color: white;
+}
+
+.experience .section-title {
+    color: white;
+}
+
+.experience .section-subtitle {
+    color: var(--text-light);
+}
+
 .timeline-container {
     max-width: 900px;
     margin: 0 auto;
@@ -838,7 +867,7 @@ section {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
 }
 
 .timeline-item {
@@ -854,7 +883,7 @@ section {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: white;
+    background: var(--background-darker);
     border: 4px solid var(--accent-color);
     box-shadow: var(--shadow-light);
 }
@@ -868,10 +897,12 @@ section {
 }
 
 .timeline-content {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
     position: relative;
 }
@@ -885,12 +916,13 @@ section {
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid white;
+    border-right: 15px solid rgba(255, 255, 255, 0.1);
 }
 
 .timeline-content:hover {
     transform: translateX(10px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .timeline-badge {
@@ -913,12 +945,12 @@ section {
 
 .timeline-title {
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 0.5rem;
 }
 
 .timeline-company {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: 1.1rem;
     margin-bottom: 1rem;
     font-weight: 500;
@@ -926,7 +958,7 @@ section {
 
 .timeline-project {
     font-style: italic;
-    color: var(--text-secondary);
+    color: var(--text-light);
     margin-bottom: 1rem;
 }
 
@@ -939,7 +971,7 @@ section {
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--text-secondary);
+    color: var(--text-light);
 }
 
 .timeline-tasks li::before {
@@ -957,8 +989,8 @@ section {
 }
 
 .skill-badge {
-    background: var(--gradient-gold);
-    color: var(--primary-color);
+    background: var(--gradient-accent);
+    color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -967,7 +999,16 @@ section {
 
 /* Education Section */
 .education {
-    background: var(--background-light);
+    background: var(--background-dark);
+    color: white;
+}
+
+.education .section-title {
+    color: white;
+}
+
+.education .section-subtitle {
+    color: var(--text-light);
 }
 
 .education-grid {
@@ -979,10 +1020,12 @@ section {
 }
 
 .education-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -995,19 +1038,20 @@ section {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
 }
 
 .education-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .education-icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1028,19 +1072,19 @@ section {
 
 .education-title {
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 0.5rem;
 }
 
 .education-school {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .education-details h5 {
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
@@ -1052,8 +1096,8 @@ section {
 }
 
 .competence-item {
-    background: var(--gradient-gold);
-    color: var(--primary-color);
+    background: var(--gradient-accent);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -1061,6 +1105,19 @@ section {
 }
 
 /* Skills Section */
+.skills {
+    background: var(--background-darker);
+    color: white;
+}
+
+.skills .section-title {
+    color: white;
+}
+
+.skills .section-subtitle {
+    color: var(--text-light);
+}
+
 .skills-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -1073,10 +1130,12 @@ section {
 }
 
 .skill-category {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -1089,12 +1148,13 @@ section {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
 }
 
 .skill-category:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .category-header {
@@ -1108,7 +1168,7 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1121,7 +1181,7 @@ section {
 
 .category-header h3 {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: white;
 }
 
 .skill-items {
@@ -1144,18 +1204,18 @@ section {
 
 .skill-name {
     font-weight: 600;
-    color: var(--text-primary);
+    color: white;
 }
 
 .skill-level {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-weight: 500;
 }
 
 .skill-bar {
     height: 8px;
-    background: var(--border-color);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -1163,7 +1223,7 @@ section {
 
 .skill-progress {
     height: 100%;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     border-radius: 4px;
     position: relative;
     transition: width 2s ease-in-out 0.5s;
@@ -1226,22 +1286,25 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    background: var(--background-light);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 .soft-skill:hover {
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     color: white;
     transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .soft-skill-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--gradient-gold);
+    background: var(--gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1250,16 +1313,21 @@ section {
 
 .soft-skill-icon i {
     font-size: 1rem;
-    color: var(--primary-color);
+    color: white;
 }
 
 .soft-skill:hover .soft-skill-icon {
     background: white;
 }
 
+.soft-skill:hover .soft-skill-icon i {
+    color: var(--primary-color);
+}
+
 .soft-skill span {
     font-size: 0.9rem;
     font-weight: 500;
+    color: white;
 }
 
 .languages-list {
@@ -1273,13 +1341,15 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: var(--background-light);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
 }
 
 .language-name {
     font-weight: 600;
-    color: var(--text-primary);
+    color: white;
 }
 
 .language-level {
@@ -1290,23 +1360,32 @@ section {
 }
 
 .language-level.native {
-    background: var(--gradient-primary);
-    color: white;
-}
-
-.language-level.intermediate {
     background: var(--gradient-accent);
     color: white;
 }
 
-.language-level.basic {
+.language-level.intermediate {
     background: var(--gradient-gold);
     color: var(--primary-color);
 }
 
+.language-level.basic {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
 /* Contact Section */
 .contact {
-    background: var(--background-light);
+    background: var(--background-dark);
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact .section-subtitle {
+    color: var(--text-light);
 }
 
 .contact-content {
@@ -1318,22 +1397,24 @@ section {
 }
 
 .contact-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     width: 100%;
     text-align: center;
 }
 
 .contact-card h3 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 1rem;
 }
 
 .contact-card p {
-    color: var(--text-secondary);
+    color: var(--text-light);
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -1355,7 +1436,7 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1372,19 +1453,19 @@ section {
 }
 
 .method-info h4 {
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 0.25rem;
     font-size: 1rem;
 }
 
 .method-info p {
-    color: var(--text-secondary);
+    color: var(--text-light);
     margin: 0;
     font-weight: 500;
 }
 
 .method-info a {
-    color: var(--text-secondary);
+    color: var(--text-light);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -1455,7 +1536,7 @@ section {
 /* Footer */
 .footer {
     text-align: center;
-    background: var(--background-dark);
+    background: var(--background-darker);
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -1618,33 +1699,95 @@ section {
         top: -2rem;
     }
 
+    /* About Section Mobile Fixes - IMPROVED */
+    .about-content {
+        display: block; /* Change from grid to block for better mobile flow */
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
     .about-main {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        display: block; /* Change from grid to block */
+        margin-bottom: 2rem;
+    }
+
+    .about-card {
+        padding: 2rem 1.5rem; /* Better padding for mobile */
+        margin-bottom: 2rem; /* Add spacing between cards */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-card,
+    .aspirations-card {
+        grid-column: unset; /* Remove grid column constraints */
+    }
+
+    .interests-card {
+        grid-column: unset; /* Remove grid column constraints */
+        margin-top: 0;
+        padding: 2rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem; /* Reduced for mobile */
-        max-width: 350px; /* Smaller on mobile */
+        gap: 1rem;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        padding: 0;
     }
 
     .interest-item {
-        padding: 0.75rem; /* Reduced padding for mobile */
+        padding: 1.25rem 1rem; /* Increased padding for better touch targets */
+        min-height: 110px; /* Ensure consistent height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .interest-icon {
-        width: 35px; /* Smaller icons on mobile */
-        height: 35px;
-        margin-bottom: 0.5rem;
+        width: 45px; /* Increased size for mobile */
+        height: 45px;
+        margin-bottom: 0.75rem;
+        flex-shrink: 0;
     }
 
     .interest-icon i {
-        font-size: 0.9rem;
+        font-size: 1.1rem; /* Increased icon size */
     }
 
     .interest-title {
-        font-size: 0.8rem;
+        font-size: 0.95rem; /* Increased text size */
+        line-height: 1.3;
+        text-align: center;
+        word-break: break-word; /* Prevent text overflow */
+    }
+
+    /* Card icons and titles adjustments for mobile */
+    .card-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 1.25rem;
+    }
+
+    .card-icon i {
+        font-size: 1.4rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    .about-card p {
+        text-align: center;
+        line-height: 1.6;
+        font-size: 1rem;
     }
 
     .contact-content {
@@ -1733,28 +1876,101 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* About Section - Very Small Screens - IMPROVED */
+    .about-content {
+        padding: 0 0.5rem;
+    }
+
+    .about-card {
+        padding: 1.75rem 1.25rem; /* Optimized padding for very small screens */
+        margin-bottom: 1.5rem;
+    }
+
+    .interests-card {
+        padding: 1.75rem 1.25rem;
+    }
+
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem; /* Even smaller gap on very small screens */
-        max-width: 300px; /* Smaller container */
+        gap: 0.75rem;
+        max-width: 100%;
+        margin-top: 1.25rem;
     }
 
     .interest-item {
-        padding: 0.5rem; /* Minimal padding */
+        padding: 1rem 0.75rem;
+        min-height: 100px;
     }
 
     .interest-icon {
-        width: 30px; /* Very small icons */
-        height: 30px;
-        margin-bottom: 0.4rem;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.6rem;
     }
 
     .interest-icon i {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .interest-title {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .card-icon i {
+        font-size: 1.2rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Additional mobile-specific improvements */
+@media (max-width: 375px) {
+    .about-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .interests-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .interests-grid {
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .interest-item {
+        padding: 0.75rem 0.5rem;
+        min-height: 90px;
+    }
+
+    .interest-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.5rem;
+    }
+
+    .interest-icon i {
+        font-size: 0.9rem;
+    }
+
+    .interest-title {
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
 }
 

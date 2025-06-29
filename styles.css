@@ -6,8 +6,33 @@
 }
 
 :root {
-   /*Noir & blanc */
-     --primary-color: #000000;
+
+      --primary-color: #a66822; /* Doré / Cuivré élégant */
+    --secondary-color: #222222; /* Gris très foncé */
+    --accent-color: #a66822; /* Accent principal */
+    --gold-accent: #dadada; /* Blanc cassé */
+    --text-primary: #dadada;
+    --text-secondary: #999999;
+    --text-light: #dadada;
+    --background: #151515;
+    --background-light: #222222;
+    --background-dark: #0a0a0a;
+    --border-color: #383838;
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #222222, #151515);
+    --gradient-accent: linear-gradient(135deg, #a66822, #7e4e1a);
+    --gradient-gold: linear-gradient(135deg, #dadada, #999999);
+    --border-radius: 12px;
+    --border-radius-large: 20px;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Inter', sans-serif;
+
+  
+   /*Noir & blanc 
+    /* --primary-color: #000000;
     --secondary-color: #1a1a1a;
     --accent-color: #ffffff;
     --gold-accent: #999999;
@@ -28,7 +53,7 @@
     --border-radius-large: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Inter', sans-serif; 
+    --font-secondary: 'Inter', sans-serif; */
 
     /*Vert&Crème 
     --primary-color: #1b4332;

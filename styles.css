@@ -554,7 +554,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about-card {
@@ -620,19 +620,20 @@ section {
     grid-column: 2;
 }
 
-/* Interests Card - Full Width Bottom Section */
+/* Interests Card - Full Width Bottom Section - RESIZED */
 .interests-card {
     grid-column: 1 / -1;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    padding: 2rem; /* Reduced from 2.5rem */
 }
 
-/* Interests Grid - Centered and Optimized for Full Width */
+/* Interests Grid - Smaller and More Compact */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-    max-width: 800px;
+    gap: 1rem; /* Reduced from 1.5rem */
+    margin-top: 1rem; /* Reduced from 1.5rem */
+    max-width: 650px; /* Reduced from 800px */
     margin-left: auto;
     margin-right: auto;
 }
@@ -642,9 +643,9 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.75rem; /* Reduced from 1.5rem 1rem */
     background: linear-gradient(135deg, var(--background-light) 0%, #f0f0f0 100%);
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius); /* Reduced from border-radius-large */
     transition: var(--transition);
     cursor: pointer;
     position: relative;
@@ -654,7 +655,7 @@ section {
 
 @keyframes floatInterest {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
+    50% { transform: translateY(-6px); } /* Reduced from -8px */
 }
 
 .interest-item::before {
@@ -675,34 +676,34 @@ section {
 }
 
 .interest-item:hover {
-    transform: translateY(-8px) scale(1.05);
+    transform: translateY(-6px) scale(1.03); /* Reduced scale from 1.05 */
     box-shadow: var(--shadow-medium);
     animation-play-state: paused;
 }
 
 .interest-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px; /* Reduced from 50px */
+    height: 40px; /* Reduced from 50px */
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem; /* Reduced from 1rem */
     position: relative;
     z-index: 2;
     transition: var(--transition);
 }
 
 .interest-icon i {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced from 1.2rem */
     color: white;
     transition: var(--transition);
 }
 
 .interest-item:hover .interest-icon {
     background: var(--gradient-accent);
-    transform: scale(1.2) rotate(15deg);
+    transform: scale(1.15) rotate(12deg); /* Reduced scale and rotation */
 }
 
 .interest-item:hover .interest-icon i {
@@ -710,7 +711,7 @@ section {
 }
 
 .interest-title {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced from 1rem */
     font-weight: 600;
     color: var(--primary-color);
     position: relative;
@@ -721,7 +722,7 @@ section {
 .interest-item:hover .interest-title {
     color: var(--primary-color);
     font-weight: 700;
-    transform: translateY(-2px);
+    transform: translateY(-1px); /* Reduced from -2px */
 }
 
 .about-sidebar {
@@ -1560,26 +1561,26 @@ section {
 
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        max-width: 400px;
+        gap: 0.75rem; /* Reduced for mobile */
+        max-width: 350px; /* Smaller on mobile */
     }
 
     .interest-item {
-        padding: 1rem;
+        padding: 0.75rem; /* Reduced padding for mobile */
     }
 
     .interest-icon {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 0.75rem;
+        width: 35px; /* Smaller icons on mobile */
+        height: 35px;
+        margin-bottom: 0.5rem;
     }
 
     .interest-icon i {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .interest-title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .contact-content {
@@ -1670,26 +1671,26 @@ section {
 
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        max-width: 350px;
+        gap: 0.5rem; /* Even smaller gap on very small screens */
+        max-width: 300px; /* Smaller container */
     }
 
     .interest-item {
-        padding: 0.75rem;
+        padding: 0.5rem; /* Minimal padding */
     }
 
     .interest-icon {
-        width: 35px;
-        height: 35px;
-        margin-bottom: 0.5rem;
+        width: 30px; /* Very small icons */
+        height: 30px;
+        margin-bottom: 0.4rem;
     }
 
     .interest-icon i {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .interest-title {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
 

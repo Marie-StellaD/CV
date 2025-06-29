@@ -472,6 +472,15 @@ h1, h2, h3, h4, h5, h6 {
     to { transform: rotate(360deg); }
 }
 
+.profile-image {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
 .profile-placeholder {
     width: 320px;
     height: 320px;
@@ -1511,6 +1520,11 @@ section {
     .image-frame {
         width: 280px;
         height: 280px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
     }
 
     .profile-placeholder {

@@ -488,6 +488,12 @@ h1, h2, h3, h4, h5, h6 {
     animation-delay: 2s;
 }
 
+.card-4 {
+    top: 20%;
+    right: -15%;
+    animation-delay: 2s;
+}
+
 @keyframes floatCard {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -1391,6 +1397,7 @@ section {
 
 /* Footer */
 .footer {
+    text-align: center;
     background: var(--background-dark);
     color: white;
     padding: 3rem 0 1rem;

@@ -97,6 +97,13 @@ function initializeAnimations() {
         item.classList.add(index === 0 ? 'slide-in-left' : 'slide-in-right');
         observer.observe(item);
     });
+
+    // Add interest items animation
+    document.querySelectorAll('.interest-item').forEach((item, index) => {
+        item.classList.add('fade-in');
+        item.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(item);
+    });
 }
 
 // Skill bar animations
@@ -325,6 +332,35 @@ function initializeFloatingCards() {
     });
 }
 
+// Enhanced interest items interactions
+function initializeInterestItems() {
+    const interestItems = document.querySelectorAll('.interest-item');
+    
+    interestItems.forEach((item, index) => {
+        // Add staggered animation delay
+        item.style.animationDelay = `${index * 0.1}s`;
+        
+        // Add enhanced hover effects
+        item.addEventListener('mouseenter', () => {
+            // Pause the floating animation on hover
+            item.style.animationPlayState = 'paused';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            // Resume the floating animation
+            item.style.animationPlayState = 'running';
+        });
+        
+        // Add click effect
+        item.addEventListener('click', () => {
+            item.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                item.style.transform = '';
+            }, 150);
+        });
+    });
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeAnimations();
@@ -333,6 +369,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateActiveNavLink();
     initializeParallax();
     initializeFloatingCards();
+    initializeInterestItems();
     
     // Add loading animation
     document.body.style.opacity = '0';

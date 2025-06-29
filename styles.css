@@ -1132,14 +1132,45 @@ section {
     background: var(--border-color);
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
 }
 
 .skill-progress {
     height: 100%;
     background: var(--gradient-primary);
-    width: 0;
-    transition: width 1.5s ease-in-out;
     border-radius: 4px;
+    position: relative;
+    transition: width 2s ease-in-out 0.5s;
+}
+
+/* Set default widths for skill bars - this ensures they show even if JS fails */
+.skill-progress[data-width="90%"] {
+    width: 90%;
+}
+
+.skill-progress[data-width="80%"] {
+    width: 80%;
+}
+
+.skill-progress[data-width="60%"] {
+    width: 60%;
+}
+
+/* Add a subtle animation effect */
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
 
 .skill-tags {

@@ -106,22 +106,39 @@ function initializeAnimations() {
     });
 }
 
-// Skill bar animations
+// Enhanced skill bar animations with fallback
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
+    
+    // Set initial widths immediately for fallback
+    skillBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        if (width) {
+            // Set width immediately as fallback
+            bar.style.width = width;
+        }
+    });
     
     const skillBarObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const skillBar = entry.target;
                 const width = skillBar.getAttribute('data-width');
-                setTimeout(() => {
-                    skillBar.style.width = width;
-                }, 200);
+                
+                if (width) {
+                    // Reset width to 0 for animation
+                    skillBar.style.width = '0';
+                    
+                    // Animate to full width
+                    setTimeout(() => {
+                        skillBar.style.width = width;
+                    }, 100);
+                }
+                
                 skillBarObserver.unobserve(skillBar);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
     skillBars.forEach(bar => {
         skillBarObserver.observe(bar);

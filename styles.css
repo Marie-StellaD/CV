@@ -88,8 +88,8 @@
     --text-light: #DADADA;
     --background: #FFFFFF;
     --background-light: #F5F5F5;
-    --background-dark: #2A2A2A;
-    --background-darker: #1F1F1F;
+    --background-dark: #4A4A4A; /* Lightened from #2A2A2A */
+    --background-darker: #3A3A3A; /* Lightened from #1F1F1F */
     --border-color: #E0E0E0;
     --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
     --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
@@ -600,12 +600,12 @@ section {
 }
 
 .about-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity for lighter appearance */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -624,8 +624,8 @@ section {
 
 .about-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
+    background: rgba(255, 255, 255, 0.2); /* Increased hover opacity */
 }
 
 .card-icon {
@@ -689,9 +689,9 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem 0.75rem; /* Reduced from 1.5rem 1rem */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     border-radius: var(--border-radius); /* Reduced from border-radius-large */
     transition: var(--transition);
     cursor: pointer;
@@ -724,9 +724,9 @@ section {
 
 .interest-item:hover {
     transform: translateY(-6px) scale(1.03); /* Reduced scale from 1.05 */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
     animation-play-state: paused;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25); /* Increased hover opacity */
 }
 
 .interest-icon {
@@ -897,12 +897,12 @@ section {
 }
 
 .timeline-content {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
     transition: var(--transition);
     position: relative;
 }
@@ -916,13 +916,13 @@ section {
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid rgba(255, 255, 255, 0.1);
+    border-right: 15px solid rgba(255, 255, 255, 0.15); /* Matched background opacity */
 }
 
 .timeline-content:hover {
     transform: translateX(10px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
+    background: rgba(255, 255, 255, 0.2); /* Increased hover opacity */
 }
 
 .timeline-badge {
@@ -1020,12 +1020,12 @@ section {
 }
 
 .education-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -1043,8 +1043,8 @@ section {
 
 .education-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
+    background: rgba(255, 255, 255, 0.2); /* Increased hover opacity */
 }
 
 .education-icon {
@@ -1130,12 +1130,12 @@ section {
 }
 
 .skill-category {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -1153,8 +1153,8 @@ section {
 
 .skill-category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
+    background: rgba(255, 255, 255, 0.2); /* Increased hover opacity */
 }
 
 .category-header {
@@ -1215,7 +1215,7 @@ section {
 
 .skill-bar {
     height: 8px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25); /* Increased opacity */
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -1286,9 +1286,9 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
@@ -1297,7 +1297,7 @@ section {
     background: var(--gradient-accent);
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
 }
 
 .soft-skill-icon {
@@ -1341,9 +1341,9 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     border-radius: var(--border-radius);
 }
 
@@ -1370,7 +1370,7 @@ section {
 }
 
 .language-level.basic {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3); /* Increased opacity */
     color: white;
 }
 
@@ -1397,12 +1397,12 @@ section {
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Increased border opacity */
     padding: 2.5rem;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Reduced shadow intensity */
     width: 100%;
     text-align: center;
 }

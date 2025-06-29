@@ -1699,23 +1699,34 @@ section {
         top: -2rem;
     }
 
+    /* About Section Mobile Fixes */
     .about-main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
+    .about-card {
+        padding: 1.5rem; /* Reduced padding for mobile */
+    }
+
+    .interests-card {
+        padding: 1.5rem; /* Reduced padding for mobile */
+        margin-top: 0;
+    }
+
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem; /* Reduced for mobile */
-        max-width: 350px; /* Smaller on mobile */
+        gap: 0.75rem;
+        max-width: 100%;
+        margin-top: 1rem;
     }
 
     .interest-item {
-        padding: 0.75rem; /* Reduced padding for mobile */
+        padding: 0.75rem 0.5rem;
     }
 
     .interest-icon {
-        width: 35px; /* Smaller icons on mobile */
+        width: 35px;
         height: 35px;
         margin-bottom: 0.5rem;
     }
@@ -1814,18 +1825,27 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* About Section - Very Small Screens */
+    .about-card {
+        padding: 1.25rem;
+    }
+
+    .interests-card {
+        padding: 1.25rem;
+    }
+
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem; /* Even smaller gap on very small screens */
-        max-width: 300px; /* Smaller container */
+        gap: 0.5rem;
+        max-width: 100%;
     }
 
     .interest-item {
-        padding: 0.5rem; /* Minimal padding */
+        padding: 0.5rem 0.25rem;
     }
 
     .interest-icon {
-        width: 30px; /* Very small icons */
+        width: 30px;
         height: 30px;
         margin-bottom: 0.4rem;
     }
@@ -1836,6 +1856,20 @@ section {
 
     .interest-title {
         font-size: 0.75rem;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .card-icon i {
+        font-size: 1.2rem;
+    }
+
+    .about-card h3 {
+        font-size: 1.3rem;
     }
 }
 

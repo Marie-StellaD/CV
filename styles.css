@@ -1391,6 +1391,7 @@ section {
 
 /* Footer */
 .footer {
+    text-align: center;
     background: var(--background-dark);
     color: white;
     padding: 3rem 0 1rem;

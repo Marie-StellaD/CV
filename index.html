@@ -13,9 +13,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Marie-Stella</span>
-                <span class="logo-accent">DATO</span>
-            </div> 
+                <span class="logo-text"> </span>
+                <span class="logo-accent"> </span>
+            </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Accueil</a>
                 <a href="#about" class="nav-link">À propos</a>
@@ -69,7 +69,9 @@
                 <div class="hero-image">
                     <div class="image-container">
                         <div class="image-frame">
-                            <img src="photo profil.jpg" alt="Marie-Stella DATO" class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
                         </div>
                         <div class="floating-elements">
                             <div class="floating-card card-1">
@@ -128,100 +130,56 @@
                             <i class="fas fa-heart"></i>
                         </div>
                         <h3>Centres d'Intérêts</h3>
-                        <div class="interests-showcase">
-                            <div class="interest-item" data-interest="music">
-                                <div class="interest-visual">
-                                    <i class="fas fa-music"></i>
-                                </div>
-                                <span class="interest-label">Musique</span>
-                            </div>
-                            <div class="interest-item" data-interest="series">
-                                <div class="interest-visual">
-                                    <i class="fas fa-tv"></i>
-                                </div>
-                                <span class="interest-label">Séries</span>
-                            </div>
-                            <div class="interest-item" data-interest="kdramas">
-                                <div class="interest-visual">
-                                    <i class="fas fa-film"></i>
-                                </div>
-                                <span class="interest-label">K-dramas</span>
-                            </div>
-                            <div class="interest-item" data-interest="photography">
-                                <div class="interest-visual">
-                                    <i class="fas fa-camera"></i>
-                                </div>
-                                <span class="interest-label">Photographie</span>
-                            </div>
-                            <div class="interest-item" data-interest="movies">
-                                <div class="interest-visual">
-                                    <i class="fas fa-video"></i>
-                                </div>
-                                <span class="interest-label">Films</span>
-                            </div>
-                            <div class="interest-item" data-interest="travel">
-                                <div class="interest-visual">
-                                    <i class="fas fa-plane"></i>
-                                </div>
-                                <span class="interest-label">Voyage</span>
-                            </div>
-                            <div class="interest-item" data-interest="cooking">
-                                <div class="interest-visual">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                                <span class="interest-label">Cuisine</span>
-                            </div>
-                            <div class="interest-item" data-interest="reading">
-                                <div class="interest-visual">
-                                    <i class="fas fa-book"></i>
-                                </div>
-                                <span class="interest-label">Lecture</span>
-                            </div>
+                        <div class="interests-grid">
+                            <span class="interest-tag">Musique</span>
+                            <span class="interest-tag">Séries</span>
+                            <span class="interest-tag">K-dramas</span>
+                            <span class="interest-tag">Photographie</span>
+                            <span class="interest-tag">Films</span>
+                            <span class="interest-tag">Voyage</span>
+                            <span class="interest-tag">Cuisine</span>
+                            <span class="interest-tag">Lecture</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-sidebar">
-                    <div class="location-card">
-                        <div class="location-header">
-                            <div class="location-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h3>Ma Localisation</h3>
-                        </div>
-                        <div class="location-content">
-                            <div class="location-visual">
-                                <div class="world-map">
-                                    <div class="continent europe">
-                                        <div class="country france">
-                                            <div class="city paris pulse"></div>
-                                        </div>
-                                    </div>
+                    <div class="contact-info-card">
+                        <h3>Informations de Contact</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Localisation</span>
+                                    <span class="contact-value">Paris, France</span>
                                 </div>
                             </div>
-                            <div class="location-details">
-                                <div class="location-info">
-                                    <div class="location-primary">
-                                        <i class="fas fa-city"></i>
-                                        <span class="city-name">Paris</span>
-                                    </div>
-                                    <div class="location-secondary">
-                                        <i class="fas fa-flag"></i>
-                                        <span class="country-name">France</span>
-                                    </div>
-                                    <div class="location-coordinates">
-                                        <i class="fas fa-compass"></i>
-                                        <span>48.8566° N, 2.3522° E</span>
-                                    </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="location-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-value">🇫🇷</span>
-                                        <span class="stat-label">Europe</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-value">GMT+1</span>
-                                        <span class="stat-label">Timezone</span>
-                                    </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">mariestella.msd@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Téléphone</span>
+                                    <span class="contact-value">07 66 50 22 02</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value">Marie-Stella DATO</span>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +479,7 @@
                                 <div class="soft-skill-icon">
                                     <i class="fas fa-lightbulb"></i>
                                 </div>
-                                <span>Curiosity</span>
+                                <span>Curiosité</span>
                             </div>
                             <div class="soft-skill">
                                 <div class="soft-skill-icon">
@@ -565,12 +523,14 @@
             <div class="section-header">
                 <div class="section-number">05</div>
                 <h2 class="section-title">Contactez-moi</h2>
-                <p class="section-subtitle">N'hésitez pas à me contacter pour discuter d'opportunités professionnelles.</p>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour discuter d'opportunités professionnelles</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-card">
-
+                        <h3>Restons en contact</h3>
+                        <p>Je suis toujours ouverte aux nouvelles opportunités et collaborations dans le domaine de la data science et de l'analyse de données.</p>
+                        
                         <div class="contact-methods">
                             <div class="contact-method">
                                 <div class="method-icon">
@@ -605,28 +565,79 @@
                                 </div>
                                 <div class="method-info">
                                     <h4>LinkedIn</h4>
-                                    <p>
-                                      <a href="https://www.linkedin.com/in/marie-stella-dato-302605219/" target="_blank" rel="noopener noreferrer">
-                                          Marie-Stella DATO
-                                      </a>
-                                    </p>
+                                    <p>Marie-Stella DATO</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <!--   <div class="container">  -->
-
-          <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">Marie-Stella</span>
+                        <span class="logo-accent">DATO</span>
+                    </div>
+                    <p class="footer-description">
+                        Consultante Data Analyst passionnée par la transformation des données en insights stratégiques.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#education">Formation</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> mariestella.msd@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 07 66 50 22 02</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
                 <p>&copy; 2024 Marie-Stella DATO. Tous droits réservés.</p>
-          </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

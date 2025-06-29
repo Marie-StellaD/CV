@@ -54,11 +54,11 @@
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif; */
   
-    /* Palette Marron & Doré */
-    --primary-color: #4e342e; /* Marron profond */
-    --secondary-color: #6d4c41; /* Marron clair */
-    --accent-color: #c5a880; /* Doré élégant */
-    --gold-accent: #d4af37; /* Or riche */
+    /* Palette Marron & Doré 
+    --primary-color: #4e342e; /* Marron profond 
+    --secondary-color: #6d4c41; /* Marron clair 
+    --accent-color: #c5a880; /* Doré élégant 
+    --gold-accent: #d4af37; /* Or riche 
     --text-primary: #3e2723;
     --text-secondary: #5d4037;
     --text-light: #d7ccc8;
@@ -76,7 +76,37 @@
     --border-radius-large: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Inter', sans-serif;*/
+
+
+    --primary-color: #3e2c1c; /* Marron profond */
+    --secondary-color: #5c4033; /* Marron plus clair */
+    --accent-color: #c7a76c; /* Doré élégant */
+    --gold-accent: #e0c097; /* Doré clair */
+    --text-primary: #1a1a1a; /* Noir profond */
+    --text-secondary: #5c5c5c; /* Gris foncé pour contraste */
+    --text-light: #dcdcdc; /* Gris clair */
+    --background: #ffffff; /* Fond blanc */
+    --background-light: #f9f9f9;
+    --background-dark: #1a1a1a; /* Noir pour dark sections */
+    --border-color: #e0e0e0;
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #3e2c1c, #5c4033);
+    --gradient-accent: linear-gradient(135deg, #c7a76c, #e0c097);
+    --gradient-gold: linear-gradient(135deg, #f4d35e, #f0b67f);
+    --border-radius: 12px;
+    --border-radius-large: 20px;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif;
+
+
+
+
+
+  
 }
 
 /* Import Google Fonts */

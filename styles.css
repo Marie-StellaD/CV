@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--primary-color);
 }
 
-.btn-github {
+.btn-experience {
     color: var(--text-light); /*var(--accent-color); */
     border: 2px solid var(--primary-color);
     border-color: var(--text-light);
@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-.btn-github:hover {
+.btn-experience:hover {
     background: var(--primary-color) ; /* couleur de fond au hover 
     color:  white;     /* couleur du texte au hover 
 }

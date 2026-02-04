@@ -287,6 +287,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-compact {
     min-height: 60vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .hero-container {
@@ -318,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-line {
-    display: block;
+    display: inline;
 }
 
 .title-line.accent {

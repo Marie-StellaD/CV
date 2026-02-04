@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -573,7 +577,7 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 Marie-Stella DATO. Tous droits réservés.</p>
+        <p>&copy; <span id="current-year"></span> Marie-Stella DATO. Tous droits réservés.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -23,6 +27,7 @@
                 <a href="#education" class="nav-link">Formation</a>
                 <a href="#skills" class="nav-link">Compétences</a>
                 <a href="#interests" class="nav-link">Centres d'intérêts</a>
+            <!--<a href="detailsxp.html" class="nav-link">Portfolio</a>-->
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -131,53 +136,6 @@
                     </div>
                    
                 </div>
-      <!--          <div class="about-sidebar">
-                    <div class="contact-info-card">
-                        <h3>Informations de Contact</h3>
-                        <div class="contact-items">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <span class="contact-label">Localisation</span>
-                                    <span class="contact-value">Paris, France</span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <span class="contact-label">Email</span>
-                                    <span class="contact-value">mariestella.msd@gmail.com</span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <span class="contact-label">Téléphone</span>
-                                    <span class="contact-value">07 66 50 22 02</span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <span class="contact-label">LinkedIn</span>
-                                    <span class="contact-value">
-                                       <a href="https://www.linkedin.com/in/marie-stella-dato-302605219/" target="_blank" rel="noopener noreferrer">
-                                          Marie-Stella DATO
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -212,9 +170,9 @@
                                     <li>Gestion des applications sur la console de management de Qlik</li>
                                 </ul>
 
-                                <!-- Bouton ajouté ici -->
-                                <a href="https://github.com" class="btn btn-secondary btn-experience" target="_blank" rel="noopener noreferrer">
-                                    Voir mon expérience en détails
+                                <!-- Bouton ajouté ici  || Ajouter avant 'rel' -> target="_blank" si on veut qu'une nouvelle page s'affiche -->
+                                <a href="detailsxp.html" class="btn btn-secondary btn-experience" rel="noopener noreferrer">
+                                    Voir mon expérience en détails (en cours)
                                     
                                 </a>                            
                                 <!-- Fin bouton ajouté -->
@@ -647,10 +605,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Marie-Stella DATO. Tous droits réservés.</p>
-       <!-- <div class="footer-bottom">
-              <p>&copy; 2026 Marie-Stella DATO. Tous droits réservés.</p>
-        </div>-->
+        <p>&copy; <span id="current-year"></span> Marie-Stella DATO. Tous droits réservés.</p>
     </footer>
 
     <script src="script.js"></script>

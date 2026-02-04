@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 20%, #e0e0e0 40%, #c0c0c0 60%, #808080 80%, #2a2a2a 100%);
 }
 
+
 .hero-background {
     position: absolute;
     top: 0;
@@ -417,6 +418,20 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--primary-color);
     color: white;
     transform: translateY(-3px);
+}
+
+.btn-return {
+    color: var(--text-light); /*var(--accent-color); */
+    border: 2px solid var(--primary-color);
+    border-color: var(--text-light);
+    margin-bottom: 1rem; /* espace entre le bouton et .skills-developed */
+}
+
+.btn-return:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-heavy);
 }
 
 /* Hero Image */

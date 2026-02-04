@@ -284,6 +284,11 @@ h1, h2, h3, h4, h5, h6 {
     50% { transform: translateY(-20px) rotate(5deg); }
 }
 
+
+.hero-compact {
+    min-height: 60vh;
+}
+
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -340,10 +345,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-secondary);
+    color: black;
     margin-bottom: 3rem;
     line-height: 1.8;
     max-width: 500px;
+    margin-bottom: -1rem;
 }
 
 .hero-buttons {

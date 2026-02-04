@@ -8,10 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<script>
-    const currentYear = new Date().getFullYear();
-    document.getElementById('current-year').textContent = currentYear;
-</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -66,40 +62,53 @@
                 <h2 class="section-title">Seine-et-Marne Attractivité</h2>
                 <p class="section-subtitle">Consultante Data Analyst • avril 2025 - décembre 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Objectif : 
-                    Support aux utilisateurs sur les outils de reporting et d’analyse de données, avec prise en charge
-                    des demandes, corrections et améliorations continues.
-                </p>
-                <p>
-                    Environnement :
-                    Agence de développement économique et d’attractivité territoriale du département de Seine-et-Marne.
-                    Mission réalisée en autonomie et au centre de service d'ACSSI, en lien direct avec la cheffe de projet
-                    observation et développement touristiques du pôle ingénierie.
-                </p>
-                
-                <ul class="timeline-tasks">
-                    <p>Tâches : </p>
-                    <li>Correction des bugs et dysfonctionnements, analyse des causes racines et validation avant déploiement.</li>
-                    <li>Mise à jour, optimisation et maintenance des scripts existants pour fiabiliser les traitements.</li>
-                    <li>Refonte d’une application de suivi budgétaire : analyse de l’existant, restructuration et optimisation.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie itérative centrée client : cadrage du besoin, planification, livraisons intermédiaires
-                    et restitution finale avec ajustements.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>
+                        Support aux utilisateurs sur les outils de reporting et d’analyse de données, avec prise en charge
+                        des demandes, corrections et améliorations continues.
+                    </p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Agence de développement économique et d’attractivité territoriale du département de Seine-et-Marne.
+                        Mission réalisée en autonomie et au centre de service d'ACSSI, en lien direct avec la cheffe de projet
+                        observation et développement touristiques du pôle ingénierie.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie itérative centrée client : cadrage du besoin, planification, livraisons intermédiaires
+                        et restitution finale avec ajustements.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Correction des bugs et dysfonctionnements, analyse des causes racines et validation avant déploiement.</li>
+                        <li>Mise à jour, optimisation et maintenance des scripts existants pour fiabiliser les traitements.</li>
+                        <li>Refonte d’une application de suivi budgétaire : analyse de l’existant, restructuration et optimisation.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense Enterprise</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -112,39 +121,54 @@
                 <h2 class="section-title">DCI Group</h2>
                 <p class="section-subtitle">Consultante Data Analyst • juin 2024 - octobre 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Reprise de sujets existants et développement de nouveaux tableaux de bord.
-                </p>
-                <p>
-                    Groupe international spécialisé dans la formation et l’ingénierie de défense. Mission menée en autonomie
-                    dans les locaux, en collaboration avec l'équipe de la Direction des Systèmes d’Information.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Participation à la migration PeopleSoft vers Workday (phase finale des données).</li>
-                    <li>Conception d’applications BI pour la comptabilité, le suivi du ticketing et le département RH.</li>
-                    <li>Configuration des certificats d’authentification pour Qlik Sense Monitoring.</li>
-                    <li>Intégration du modèle de données Workday dans Qlik.</li>
-                    <li>Support fonctionnel et technique aux utilisateurs métiers.</li>
-                    <li>Montée de version de Qlik Sense et Qlik NPrinting en environnements TEST et PROD.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie itérative orientée client : cadrage du besoin, planification, livraisons progressives,
-                    validations continues et ajustements en réunion.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Reprise de sujets existants et développement de nouveaux tableaux de bord.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Groupe international spécialisé dans la formation et l’ingénierie de défense. Mission menée en autonomie
+                        dans les locaux, en collaboration avec l'équipe de la Direction des Systèmes d’Information.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie itérative orientée client : cadrage du besoin, planification, livraisons progressives,
+                        validations continues et ajustements en réunion.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Participation à la migration PeopleSoft vers Workday (phase finale des données).</li>
+                        <li>Conception d’applications BI pour la comptabilité, le suivi du ticketing et le département RH.</li>
+                        <li>Configuration des certificats d’authentification pour Qlik Sense Monitoring.</li>
+                        <li>Intégration du modèle de données Workday dans Qlik.</li>
+                        <li>Support fonctionnel et technique aux utilisateurs métiers.</li>
+                        <li>Montée de version de Qlik Sense et Qlik NPrinting en environnements TEST et PROD.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense</span>
                     <span class="skill-badge">SOAP UI</span>
                     <span class="skill-badge">Qlik NPrinting</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -157,37 +181,52 @@
                 <h2 class="section-title">Altavia</h2>
                 <p class="section-subtitle">Consultante Data Analyst • août 2025 - septembre 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Migration des dashboards QlikView et Qlik Sense vers le cloud.
-                </p>
-                <p>
-                    Groupe de conseil en stratégie, marketing et transformation du retail. Mission menée en autonomie
-                    en collaboration directe avec le Data Lead.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Configuration et administration du tenant Qlik Cloud (paramètres globaux et gestion des accès).</li>
-                    <li>Mise en place de l’Identity Provider (IdP) pour l’authentification et la sécurisation des accès.</li>
-                    <li>Structuration des espaces et gouvernance des rôles/droits sur Qlik Cloud.</li>
-                    <li>Développement de scripts pour migrer QlikView et Qlik Sense Enterprise vers le cloud.</li>
-                </ul>
-                <p class="timeline-description">
-                    Approche méthodologique itérative basée sur le recueil du besoin, la planification des échanges
-                    et un avancement autonome entre les réunions.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Migration des dashboards QlikView et Qlik Sense vers le cloud.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Groupe de conseil en stratégie, marketing et transformation du retail. Mission menée en autonomie
+                        en collaboration directe avec le Data Lead.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Approche méthodologique itérative basée sur le recueil du besoin, la planification des échanges
+                        et un avancement autonome entre les réunions.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Configuration et administration du tenant Qlik Cloud (paramètres globaux et gestion des accès).</li>
+                        <li>Mise en place de l’Identity Provider (IdP) pour l’authentification et la sécurisation des accès.</li>
+                        <li>Structuration des espaces et gouvernance des rôles/droits sur Qlik Cloud.</li>
+                        <li>Développement de scripts pour migrer QlikView et Qlik Sense Enterprise vers le cloud.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense Enterprise</span>
                     <span class="skill-badge">Qlik Sense Cloud</span>
                     <span class="skill-badge">PowerShell</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -200,37 +239,52 @@
                 <h2 class="section-title">Access Capital Partners</h2>
                 <p class="section-subtitle">Consultante Data Analyst • février 2025 - avril 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Migration de Qlik Sense Enterprise vers Qlik Sense Cloud.
-                </p>
-                <p>
-                    Société européenne de gestion de fonds d’investissement et de private equity. Mission menée en autonomie
-                    et sur site avec l’équipe data (Data Manager).
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Configuration et administration du tenant Qlik Cloud.</li>
-                    <li>Mise en place de l’Identity Provider (IdP) et structuration des espaces.</li>
-                    <li>Migration des applications Qlik Sense Enterprise vers Qlik Cloud.</li>
-                    <li>Conception d’une application ODAG pour la génération dynamique d’applications.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie de travail itérative orientée client : cadrage, jalons, validations intermédiaires
-                    et restitution finale.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Migration de Qlik Sense Enterprise vers Qlik Sense Cloud.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Société européenne de gestion de fonds d’investissement et de private equity. Mission menée en autonomie
+                        et sur site avec l’équipe data (Data Manager).
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie de travail itérative orientée client : cadrage, jalons, validations intermédiaires
+                        et restitution finale.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Configuration et administration du tenant Qlik Cloud.</li>
+                        <li>Mise en place de l’Identity Provider (IdP) et structuration des espaces.</li>
+                        <li>Migration des applications Qlik Sense Enterprise vers Qlik Cloud.</li>
+                        <li>Conception d’une application ODAG pour la génération dynamique d’applications.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense Enterprise</span>
                     <span class="skill-badge">Qlik Sense Cloud</span>
                     <span class="skill-badge">PowerShell</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -244,33 +298,49 @@
                 <h2 class="section-title">Normandise Pet Food</h2>
                 <p class="section-subtitle">Consultante Data Analyst • janvier 2025 - septembre 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Support aux utilisateurs sur les outils de reporting et d’analyse de données.
-                </p>
-                <p>
-                    Groupe industriel spécialisé dans la nutrition animale. Mission en autonomie avec les équipes métiers orientées logistique.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Détection et analyse des anomalies dans les données et visualisations.</li>
-                    <li>Correction des erreurs (traitements, règles de calcul et restitutions).</li>
-                    <li>Mise à jour et optimisation des graphiques et tableaux de bord.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie itérative centrée client : cadrage du besoin, planification, livraisons intermédiaires
-                    et restitution finale avec ajustements.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Support aux utilisateurs sur les outils de reporting et d’analyse de données.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Groupe industriel spécialisé dans la nutrition animale. Mission en autonomie avec les équipes métiers
+                        orientées logistique.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie itérative centrée client : cadrage du besoin, planification, livraisons intermédiaires
+                        et restitution finale avec ajustements.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Détection et analyse des anomalies dans les données et visualisations.</li>
+                        <li>Correction des erreurs (traitements, règles de calcul et restitutions).</li>
+                        <li>Mise à jour et optimisation des graphiques et tableaux de bord.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -284,34 +354,47 @@
                 <h2 class="section-title">Proludic</h2>
                 <p class="section-subtitle">Consultante Data Analyst • mars 2025</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Mise à jour de Qlik, installations et développements.
-                </p>
-                <p>
-                    Entreprise industrielle spécialisée dans la conception et la fabrication d’aires de jeux et d’équipements ludiques.
-                    Intervention menée en autonomie dans les locaux, en collaboration avec le responsable système d’information.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Montée de version de Qlik Sense Enterprise : prérequis, préparation, compatibilités et tests.</li>
-                    <li>Installation et configuration de Qlik Data Gateway pour sécuriser les connexions.</li>
-                    <li>Développement d’automatisations sur Qlik Cloud pour fiabiliser les rafraîchissements.</li>
-                </ul>
-                <p class="timeline-description">
-                    Approche itérative avec cadrage du besoin client, livrables et validation finale des résultats.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Mise à jour de Qlik, installations et développements.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Entreprise industrielle spécialisée dans la conception et la fabrication d’aires de jeux et d’équipements ludiques.
+                        Intervention menée en autonomie dans les locaux, en collaboration avec le responsable système d’information.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>Approche itérative avec cadrage du besoin client, livrables et validation finale des résultats.</p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Montée de version de Qlik Sense Enterprise : prérequis, préparation, compatibilités et tests.</li>
+                        <li>Installation et configuration de Qlik Data Gateway pour sécuriser les connexions.</li>
+                        <li>Développement d’automatisations sur Qlik Cloud pour fiabiliser les rafraîchissements.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense Enterprise</span>
                     <span class="skill-badge">Qlik Sense Cloud</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -324,38 +407,53 @@
                 <h2 class="section-title">Plurial Novilia</h2>
                 <p class="section-subtitle">Consultante Data Analyst • février 2024 - septembre 2024</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Migration de trois applications de QlikView vers Qlik Sense.
-                </p>
-                <p>
-                    Groupe immobilier et bailleur social spécialisé dans le logement social et l’aménagement territorial.
-                    Collaboration directe avec l’Architecte Data BI, en autonomie, et accompagnement des ressources ACSSI.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Chiffrage et estimation des charges de migration d’applications existantes.</li>
-                    <li>Reprise et transformation des données QlikView pour l’alimentation du Datawarehouse.</li>
-                    <li>Développement d’un générateur automatisé de QVDs et d’une application d’historisation.</li>
-                    <li>Organisation des dossiers de sauvegarde et adaptation des règles de calcul des QVDs.</li>
-                    <li>Migration QlikView vers Qlik Sense, refonte des visualisations et création d’un thème personnalisé.</li>
-                    <li>Maintenance corrective/évolutive et installation des patchs Qlik Sense.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie itérative orientée client : cadrage, jalons, validations intermédiaires
-                    et restitution finale.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Migration de trois applications de QlikView vers Qlik Sense.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>
+                        Groupe immobilier et bailleur social spécialisé dans le logement social et l’aménagement territorial.
+                        Collaboration directe avec l’Architecte Data BI, en autonomie, et accompagnement des ressources ACSSI.
+                    </p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie itérative orientée client : cadrage, jalons, validations intermédiaires
+                        et restitution finale.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Chiffrage et estimation des charges de migration d’applications existantes.</li>
+                        <li>Reprise et transformation des données QlikView pour l’alimentation du Datawarehouse.</li>
+                        <li>Développement d’un générateur automatisé de QVDs et d’une application d’historisation.</li>
+                        <li>Organisation des dossiers de sauvegarde et adaptation des règles de calcul des QVDs.</li>
+                        <li>Migration QlikView vers Qlik Sense, refonte des visualisations et création d’un thème personnalisé.</li>
+                        <li>Maintenance corrective/évolutive et installation des patchs Qlik Sense.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense Enterprise</span>
                     <span class="skill-badge">QlikView</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -368,35 +466,46 @@
                 <h2 class="section-title">ACSSI</h2>
                 <p class="section-subtitle">Consultante Data Analyst • septembre 2022 - février 2026</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Développement d’applications Qlik Sense internes et clientes (centre de services).
-                </p>
-                <p>
-                    Mission réalisée en centre de service ACSSI avec des échanges réguliers auprès des clients.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Interview clients et gestion des interactions techniques/fonctionnelles métiers.</li>
-                    <li>Import des données, écriture de scripts et modélisation des données Qlik Sense.</li>
-                    <li>Création des visualisations et automatisations (documents, exports, rechargements).</li>
-                    <li>Développement d’applications de suivi du temps passé en maintenance.</li>
-                    <li>Migration d’applications QlikView vers Qlik Sense.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie agile.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Développement d’applications Qlik Sense internes et clientes (centre de services).</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>Mission réalisée en centre de service ACSSI avec des échanges réguliers auprès des clients.</p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>Méthodologie agile.</p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Interview clients et gestion des interactions techniques/fonctionnelles métiers.</li>
+                        <li>Import des données, écriture de scripts et modélisation des données Qlik Sense.</li>
+                        <li>Création des visualisations et automatisations (documents, exports, rechargements).</li>
+                        <li>Développement d’applications de suivi du temps passé en maintenance.</li>
+                        <li>Migration d’applications QlikView vers Qlik Sense.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Qlik Sense</span>
                     <span class="skill-badge">Qlik Cloud</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -410,36 +519,49 @@
                 <h2 class="section-title">ISIA Lab - Université de Mons</h2>
                 <p class="section-subtitle">Data Analyst (Stage) • mai 2022 - août 2022</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="marker-inner"></div>
-                        </div>
-                        <div class="timeline-content">
-                <p class="timeline-project">
-                    Analyse d’expressions non-verbales dans les interactions hommes-agents.
-                </p>
-                <p>
-                    Service de recherche ISIA Lab à l’Université de Mons, équipe d’une vingtaine de personnes.
-                </p>
-                <ul class="timeline-tasks">
-                    <li>Annotation et qualification de vidéos à partir de données brutes.</li>
-                    <li>Analyses descriptives et statistiques de la base de données.</li>
-                    <li>Conception de visualisations pour restituer les résultats.</li>
-                    <li>Développement d’une page web interactive présentant les visualisations.</li>
-                </ul>
-                <p class="timeline-description">
-                    Méthodologie itérative basée sur des objectifs mensuels, déclinés en sous-objectifs hebdomadaires,
-                    avec réunions régulières de suivi.
-                </p>
+            <div class="experience-mosaic">
+                <article class="experience-tile tile-goal" style="--tile-delay: 0s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h3>Objectifs</h3>
+                    </div>
+                    <p>Analyse d’expressions non-verbales dans les interactions hommes-agents.</p>
+                </article>
+                <article class="experience-tile tile-env" style="--tile-delay: 0.3s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>Service de recherche ISIA Lab à l’Université de Mons, équipe d’une vingtaine de personnes.</p>
+                </article>
+                <article class="experience-tile tile-method" style="--tile-delay: 0.2s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-atom"></i></span>
+                        <h3>Méthodologie</h3>
+                    </div>
+                    <p>
+                        Méthodologie itérative basée sur des objectifs mensuels, déclinés en sous-objectifs hebdomadaires,
+                        avec réunions régulières de suivi.
+                    </p>
+                </article>
+                <article class="experience-tile tile-tasks" style="--tile-delay: 0.1s">
+                    <div class="tile-header">
+                        <span class="tile-icon"><i class="fa-solid fa-list-check"></i></span>
+                        <h3>Tâches réalisées</h3>
+                    </div>
+                    <ul class="tile-list">
+                        <li>Annotation et qualification de vidéos à partir de données brutes.</li>
+                        <li>Analyses descriptives et statistiques de la base de données.</li>
+                        <li>Conception de visualisations pour restituer les résultats.</li>
+                        <li>Développement d’une page web interactive présentant les visualisations.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="experience-meta">
                 <div class="skills-developed">
                     <span class="skill-badge">Python</span>
                     <span class="skill-badge">GitHub</span>
                     <span class="skill-badge">Streamlit</span>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -451,7 +573,7 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; <span id="current-year"></span> Marie-Stella DATO. Tous droits réservés.</p>
+        <p>&copy; <span class="current-year">2026</span> Marie-Stella DATO. Tous droits réservés.</p>
     </footer>
 
     <script src="script.js"></script>

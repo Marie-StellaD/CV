@@ -895,6 +895,149 @@ section {
     color: var(--text-light);
 }
 
+.hero-compact {
+    min-height: 60vh;
+}
+
+.hero-compact .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.experience-mosaic {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+        "goal goal"
+        "env tasks"
+        "method tasks";
+    gap: 1.6rem;
+}
+
+.experience-tile {
+    position: relative;
+    padding: 1.6rem 1.8rem;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(14px);
+    overflow: hidden;
+    animation: tileReveal 0.7s ease both;
+    animation-delay: var(--tile-delay, 0s);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 55%);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.experience-tile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+}
+
+.tile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    margin-bottom: 0.9rem;
+    color: var(--text-light);
+}
+
+.tile-header h3 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: inherit;
+}
+
+.tile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.tile-icon i {
+    color: white;
+    font-size: 1rem;
+}
+
+.tile-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.tile-goal {
+    grid-area: goal;
+    border-left: 3px solid rgba(164, 117, 81, 0.7);
+}
+
+.tile-tasks {
+    grid-area: tasks;
+    border-left: 3px solid rgba(210, 180, 140, 0.8);
+}
+
+.tile-method {
+    grid-area: method;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.tile-env {
+    grid-area: env;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.experience-meta {
+    margin-top: 2rem;
+}
+
+@keyframes tileReveal {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .experience-mosaic {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "goal"
+            "env"
+            "tasks"
+            "method";
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .experience-tile {
+        animation: none;
+        transform: none;
+    }
+}
+
 .timeline-container {
     max-width: 900px;
     margin: 0 auto;

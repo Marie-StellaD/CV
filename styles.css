@@ -425,6 +425,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--primary-color);
     border-color: var(--text-light);
     margin-bottom: 1rem; /* espace entre le bouton et .skills-developed */
+    text-align: center;
 }
 
 .btn-return:hover {
@@ -432,6 +433,12 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-heavy);
+}
+
+.return-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2rem;
 }
 
 /* Hero Image */
@@ -1009,6 +1016,11 @@ section {
     left: 0;
     color: var(--accent-color);
     font-weight: bold;
+}
+
+.timeline-description {
+    list-style: none;
+    margin-bottom: 1rem;
 }
 
 .skills-developed {

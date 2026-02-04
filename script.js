@@ -388,6 +388,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeFloatingCards();
     initializeInterestItems();
     
+    const currentYear = new Date().getFullYear();
+    document.querySelectorAll('.current-year').forEach(element => {
+        element.textContent = currentYear;
+    });
+    
     // Add loading animation
     document.body.style.opacity = '0';
     setTimeout(() => {
